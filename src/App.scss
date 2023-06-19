@@ -1,0 +1,317 @@
+$randomNumber: random(6);
+
+.p-datatable .p-datatable-tbody .d-error {
+    background-color: salmon !important;
+}
+
+.calendarWrap {
+    position: relative;
+    min-width: 350px;
+}
+
+.calendarElement {
+    position: absolute;
+    left: 35%;
+    transform: translateX(-50%);
+    z-index: 99999 !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background-1 {
+    background-image: url("./assets/images/login/1.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    justify-content: left;
+}
+
+.background-2 {
+    background-image: url("./assets/images/login/2.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    justify-content: left;
+}
+
+.background-3 {
+    background-image: url("./assets/images/login/3.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    justify-content: left;
+}
+
+.background-4 {
+    background-image: url("./assets/images/login/4.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    justify-content: left;
+}
+
+.background-5 {
+    background-image: url("./assets/images/login/5.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    justify-content: left;
+}
+
+.scrollHeight {
+    min-height: 500px;
+}
+
+.p-image img {
+    min-width: 100px;
+    max-width: 250px;
+    height: auto;
+}
+
+/* Input Padding */
+// .p-inputtext {
+//     padding-top: 0.75rem ;
+//     padding-bottom: 0.5rem;
+//     padding-left: 1rem;
+//     padding-right: 1rem;
+// }
+
+/* Scrollbar pallet */
+html {
+    --scrollbarBG: #cfd8dc;
+    --thumbBG: #9e9e9e;
+    --trackBG: #fafafa;
+    --thumbBGConfig: #BDBDBD;
+}
+
+/* Body Scrollbar */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--trackBG) ;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 6px;
+    border: 1px solid var(--thumbBG);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #616161;
+}
+
+/* Layout-Sidebar Scrollbar */
+.layout-sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.layout-sidebar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+.layout-sidebar::-webkit-scrollbar-track {
+    background: var(--trackBG) ;
+}
+
+.layout-sidebar::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 6px;
+    border: 1px solid var(--thumbBG);
+}
+
+.layout-sidebar::-webkit-scrollbar-thumb:hover {
+    background-color: #616161;
+}
+
+/* Layout-config Scrollbar */
+.layout-config-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.layout-config-content {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBGConfig) var(--scrollbarBG);
+}
+
+.layout-config-content::-webkit-scrollbar-track {
+    background: var(--trackBG) ;
+}
+
+.layout-config-content::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBGConfig);
+    border-radius: 6px;
+    border: 1px solid var(--thumbBGConfig);
+}
+
+.layout-config-content::-webkit-scrollbar-thumb:hover {
+    background-color: #616161;
+}
+
+/* DataTables_scroll */
+.p-datatable-wrapper::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.p-datatable-wrapper {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+.p-datatable-wrapper::-webkit-scrollbar-track {
+    background: var(--trackBG) ;
+}
+
+.p-datatable-wrapper::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 6px;
+    border: 1px solid var(--thumbBG);
+}
+
+.p-datatable-wrapper::-webkit-scrollbar-thumb:hover {
+    background-color: #616161;
+}
+
+.p-chip.custom-chip {
+    /* Center the content */
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+
+    /* Spacing */
+    padding-top: 0.20rem ;
+    padding-bottom: -0.15rem;
+    padding-left: 0.75rem;
+    padding-right: 0.5rem;
+
+    background: var(--primary-color);
+    color: var(--primary-color-text);
+}
+
+.p-chip .p-chip-remove-icon {
+    border-radius: 4px;
+    transition: box-shadow 0.15s;
+    margin-left: 0.5rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.p-menuitem-text {
+    padding-top: 5px;
+}
+
+.p-datatable-frozen-tbody {
+    font-weight: bold;
+}
+
+.p-datatable-scrollable .p-frozen-column {
+    font-weight: bold;
+}
+
+.map-container {
+  width: 100%;
+  height: 100vh;
+}
+
+// .p-picklist-filter .p-picklist-filter-input {
+//     margin-top: 5px;
+//     margin-bottom: 5px;
+// }
+
+.p-picklist-filter-icon  {
+    display: none;
+}
+
+// .p-picklist-list-wrapper  {
+//     height: 50rem;
+// }
+
+// ul .p-picklist-list-wrapper {
+//     height: 60rem;
+//     border: solid;
+// }
+
+.p-picklist-filter-container  {
+    margin-bottom: 10px;
+}
+
+.round {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.round-image {
+    transform: translate(-20%, -30%);
+}
+
+.round-list {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    justify-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.round-image-list {
+    transform: translate(-20%, -20%);
+}
+
+.circle {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding: 100% 0 0;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid gray;
+    background-position:50% 50%;
+    background-repeat:no-repeat;
+}
+
+.circle .circle-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

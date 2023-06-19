@@ -1,0 +1,272 @@
+.sg-page {
+    width: 100%;
+}
+
+.sg-layout-report {
+    width: 100%;
+}
+
+.sg-table-container {
+    width: 100%;
+}
+
+.sg-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.sg-report-title {
+    border-top: 1px solid black;
+    font-size: 2rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.sg-logo {
+    height: 40px;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.sg-company-name {
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+}
+
+.sg-company-address {
+    text-align: right;
+}
+
+.sg-company-address > p {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.sg-layout-report .sg-company-address > div {
+    width: 50%;
+    margin-bottom: 0.5rem;
+}
+
+.sg-page-footer {
+    width: 100%;
+}
+
+.sg-page-footer .sg-content-footer {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.sg-page-footer .sg-content-footer .sg-footer {
+    border-top: 1px solid black;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.sg-page-footer .sg-footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.sg-table td:first-child {
+    text-align: left;
+}
+
+.sg-table thead th  {
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    text-align: center;
+}
+
+.sg-table th,
+.sg-table td {
+    padding: 5px;
+    text-align: right;
+}
+
+// .sg-row {
+//     width: 100vw;
+// }
+
+.sg-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.sg-column-full {
+    width: 100%;
+}
+
+.sg-column {
+    float: left;
+    width: 50%;
+}
+
+.sg-column-20 {
+    float: left;
+    width: 20%;
+    height: auto;
+}
+
+.sg-column-25 {
+    float: left;
+    width: 25%;
+}
+
+.sg-column-80 {
+    float: left;
+    width: 80%;
+}
+
+.sg-container-info {
+    display: flex;
+    justify-content: flex-start;
+    padding: 3px 0;
+}
+
+.sg-container-info .sg-container-info-title {
+    width: 25%;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.sg-container-info .sg-container-info-value {
+    float: left;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.sg-summary {
+    margin-top: 30px;
+    border: 1px solid #333;
+}
+
+.sg-summary .sg-currency-title {
+    padding: 10px 0px 0px 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.sg-summary .sg-currency-value {
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+}
+
+.sg-summary .sg-summary-table {
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 95%;
+    float: right;
+}
+
+.sg-summary .sg-summary-table th,
+.sg-summary .sg-summary-table td {
+    padding: 2px;
+    text-align: right;
+}
+
+.sg-summary .sg-summary-table .sg-summary-table-title {
+    text-align: left;
+    font-weight: 500;
+}
+
+.sg-summary .sg-summary-table .sg-summary-table-value {
+    text-align: right;
+}
+
+.sg-text-center {
+    text-align: center;
+}
+
+.sg-margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.sg-margin-top-30 {
+    margin-top: 30px;
+}
+
+.sg-margin-top-15 {
+    margin-top: 15px;
+}
+
+.nobreak {
+  white-space: nowrap;
+}
+
+.borderRight {
+    border-right: 1px dotted #333;
+}
+
+@media print {
+    body {
+        margin: 0;
+        color: black;
+    }
+
+    .sg-page {
+        position: absolute;
+    }
+
+    .sg-layout-report {
+        position: fixed;
+        top: 0mm;
+    }
+
+    .sg-layout-report,
+    .sg-layout-report-invoice-space {
+        height: 210px;
+    }
+
+    .sg-layout-report,
+    .sg-layout-report-ujt-space {
+        height: 50px;
+    }
+
+    .sg-page-footer,
+    .sg-page-footer-invoice-space {
+        height: 70px;
+    }
+
+    .sg-page-footer,
+    .sg-page-footer-ujt-space {
+        height: 50px;
+    }
+
+    .sg-table-container {
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .sg-page-footer {
+        position: fixed;
+        bottom: 0;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tfoot {
+        display: table-footer-group;
+    }
+
+    button {
+        display: none;
+    }
+
+    @page {
+        margin: 10mm 5mm 5mm 5mm;
+    }
+}

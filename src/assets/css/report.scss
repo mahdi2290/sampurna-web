@@ -1,0 +1,18 @@
+p {
+    text-align: justify;
+}
+
+p:first-child {
+    margin-top: 0;
+}
+
+.header {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Printing Styles */
+@page {
+    size: A5;
+    margin: 10mm 10mm 10mm 10mm;
+}
